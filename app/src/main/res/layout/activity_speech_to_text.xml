@@ -15,15 +15,24 @@
         android:layout_marginStart="20dp"
         android:textSize="20sp"
         android:textColor="@color/black"
-        android:text="Press mic Button To Impute Voice..."/>
+        android:text="To Impute Voice..."/>
 
-    <ImageButton
-        android:id="@+id/voice_btn"
-        android:backgroundTint="@color/white"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:src="@drawable/ic_baseline_keyboard_voice_24"
+
+    <androidx.cardview.widget.CardView
         android:layout_centerInParent="true"
-        android:scaleType="fitXY"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        android:elevation="@dimen/cardview_default_radius">
+        <ImageButton
+            android:id="@+id/voice_btn"
+            android:backgroundTint="@color/white"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_baseline_keyboard_voice_24"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"/>
+    </androidx.cardview.widget.CardView>
+
 
 </RelativeLayout>
